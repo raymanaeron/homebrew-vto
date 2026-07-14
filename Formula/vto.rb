@@ -13,7 +13,7 @@ class Vto < Formula
   end
 
   def install
-    bin.install "vto"
+    bin.install Dir.glob("*").first => "vto"
   end
 
   test do
