@@ -6,10 +6,10 @@ class Vto < Formula
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://viato.me/api/v1/releases/darwin-arm64"
-    sha256 "ebd7c8ada485ee1c4998ff6549712e33fc2a4f6374f40226980b87d7411541f4"
+    sha256 "7a6c3ba4658d57403959d63f7d20068d1e575616b427d59c8d2ea0de8c9a4270"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://viato.me/api/v1/releases/linux-amd64"
-    sha256 "dd78a5eac0275f494262bb471395d541b696096a57d07a55df637d219e4d3f49"
+    sha256 "be355fa69e891f897560a946e765deff4e5e8afa02ff43383b9352b45a63d988"
   end
 
   def install
