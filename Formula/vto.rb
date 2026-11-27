@@ -1,18 +1,18 @@
 class Vto < Formula
   desc "viato.me tunnel client — expose localhost to the internet"
   homepage "https://viato.me"
-  version "0.1.8"
+  version "0.1.9"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://viato.me/api/v1/releases/darwin-arm64"
-    sha256 "774a6fb0d11378b210ca39e1e9f0744597de1ca2dbde149d63bfd0e4c7a6b133"
+    sha256 "3a1274006e25c122738fcfd26371c5b84267b034bf70bc3b54362f70751f485b"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://viato.me/api/v1/releases/linux-arm64"
-    sha256 "b548f783b6f0eb8360853b43a919e635879f6dd2c81f109f486befb7e599e66e"
+    sha256 "c3c094dc835eb07a3873e1059bbc374711ff77919bce09b17cd1d1c0e09273a1"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://viato.me/api/v1/releases/linux-amd64"
-    sha256 "23aeca852bd7626c58f7450adaca6b13253aa61ab3f01f00b923bd3441884933"
+    sha256 "a9c42aba9d9a3398bcbe57e959f24107412b3f687fce8c853b9ef10d041d10fb"
   end
 
   def install
